@@ -1,6 +1,10 @@
 class Solution(object):
     def minOperations(self, nums, k):
-        return sum(nums)%k
+        total=0
+        for i in nums:
+            total+=i
+        return total%k
+        # return sum(nums)%k
         # count=0
         
         # for i in nums:
