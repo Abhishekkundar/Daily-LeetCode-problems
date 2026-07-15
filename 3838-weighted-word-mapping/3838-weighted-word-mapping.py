@@ -5,13 +5,13 @@ class Solution(object):
         for word in words:
             total=0
             for _ in word:
-                index=ord(_)-ord('a')
-                total+=weights[index]
+                
+                total+=weights[ord(_)-ord('a')]
                 num=total%26
                 
             ans.append(chr(ord('z')-num))
-            print(ans)
-        print(ans)
+            
+       
         return "".join(ans)
             
                 
